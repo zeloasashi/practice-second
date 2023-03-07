@@ -1,0 +1,76 @@
+body{
+    box-sizing: border-box;
+}
+
+/* -------------header------------- */
+.header-icon{
+    width: 100%;
+    /* height: 5rem; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+}
+/* .store-icon{
+    margin: auto 0;
+
+} */
+
+.iconbox{
+    width: 150px;
+}
+.mbnav-icon > img{
+    width: 40px;
+    line-height: 5rem;
+
+}
+.nav_close{
+    text-align: end;
+}
+.icon-close{
+    height: 2.5rem;
+    padding-right: 1rem;
+
+}
+.menu-mb ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-right: 3rem;
+    border-bottom: 1px solid #000;
+}
+.menu-mb ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.menu-pc ul{
+    align-items: center;
+    margin-bottom: 0;
+}
+.menu-pc ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-right: 3rem;
+
+}
+.menu-pc ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+@media screen and (min-width:720px){
+    .mbnav-icon{
+        display: none;
+    }
+    .menu-pc ul{
+        display: flex;
+    }
+    header{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/* -------------主視覺------------- */
+
+.word-decoration{
+
+}

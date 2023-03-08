@@ -75,9 +75,8 @@ header{
 /* -------------主視覺------------- */
 
 
-.word-decoration p{
-    background-color: #fff;
-
+.main-visual{
+    margin-bottom: 50px;
 }
 .carousel-item > img{
     border-radius: 1rem;
@@ -123,5 +122,36 @@ header{
     }
     .word-decoration p{
         font-size: larger;
+    }
+}
+.news-slide{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.news-slide .news{
+    width: 90px;
+
+
+}
+.news-img{
+    margin-bottom: 8px;
+}
+.news-title p{
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 8px;
+}
+.news-title .day{
+    font-weight: bold;
+}
+@media screen and (min-width:960px){
+    .news-slide .news{
+        width: 280px;
+    
+    }
+    .news-url{
+        display: flex;
+
     }
 }

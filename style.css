@@ -175,6 +175,36 @@ section.second .title h2{
 
 
 }
+.feature-sec{
+    margin-bottom: 270px;
+
+}
 .feature-sec .f-img{
-    width: 320px;
+    position: relative;
+}
+
+.feature-sec .f-img img{
+    width: 60%;
+}
+.feature-sec .f-text01, .f-text02, .f-text03{
+    width: 80%;
+    padding: 35px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    position: absolute;
+    left: 10%;
+    bottom: -110%;
+
+}
+
+@media screen and (min-width:960px){
+    .feature-sec{
+        margin-bottom: 70px;
+    
+    }
+    .feature-sec .f-text01, .f-text02, .f-text03{
+        width: 50%;
+        left: 50%;
+        bottom: 20%;
+    }
 }

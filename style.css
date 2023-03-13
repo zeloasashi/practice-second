@@ -164,6 +164,8 @@ header{
 
 section.second{
     margin: 50px auto;
+    background: url(https://irodo.tokyo/wp/wp-content/themes/irodo/img/common/bg.png);
+    background-size: 16px 16px;
 
 }
 section.second .title{
@@ -179,11 +181,11 @@ section.second .title h2{
     margin-bottom: 270px;
 
 }
-.feature-sec .f-img{
+.feature-sec .f-img, .feature-sec .f-img02{
     position: relative;
 }
 
-.feature-sec .f-img img{
+.feature-sec .f-img img, .feature-sec .f-img02 img{
     width: 60%;
 }
 .feature-sec .f-text01, .f-text02, .f-text03{
@@ -193,18 +195,79 @@ section.second .title h2{
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
     position: absolute;
     left: 10%;
-    bottom: -110%;
+    bottom: -130%;
 
 }
 
-@media screen and (min-width:960px){
+.feature-sec .number{
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: absolute;
+    left: -30px;
+    top: 25px;
+}
+.f-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width:540px){
+    .feature-sec .f-text01, .f-text02, .f-text03{
+        left: 10%;
+        bottom: -100%;
+    
+    }
+}
+@media screen and (min-width:720px){
     .feature-sec{
         margin-bottom: 70px;
     
     }
+    .feature-sec .f-text01, .f-text03{
+        width: 50%;
+        left: 50%;
+        bottom: 7%;
+    }
+    .f-text02{
+        width: 50%;
+        left: 0;
+        bottom: 7%;
+    }
+    .feature-sec .number{
+        font-size: 3rem;
+        font-weight: bold;
+        position: absolute;
+        left:75%;
+        top: -30px;
+    }
+    .f-text02 .number{
+        left: 10%;
+    }
+    .feature-sec .f-img02{
+        display: flex;
+        justify-content: end;
+
+    }
+
+}
+@media screen and (min-width:960px){
+
     .feature-sec .f-text01, .f-text02, .f-text03{
         width: 50%;
         left: 50%;
         bottom: 20%;
     }
+    .f-text02{
+        width: 50%;
+        left: 0;
+        bottom: 20%;
+    }
+    .feature-sec .number{
+        left: 85%;
+        top: -30px;
+    }
+    .f-text02 .number{
+        left: 5%;
+    }
+
 }

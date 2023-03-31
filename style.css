@@ -79,12 +79,19 @@ header{
 
 /* -------------主視覺------------- */
 
-
-.main-visual{
+main{
     margin-bottom: 50px;
 }
+.main-visual{
+    margin-bottom: 50px;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 0 auto;
+    position: relative;
+
+}
 .carousel-item > img{
-    border-radius: 1rem;
+    border-radius: 1em;
 }
 
 .word-decoration{

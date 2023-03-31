@@ -85,9 +85,16 @@ main{
 .main-visual{
     margin-bottom: 50px;
     overflow: hidden;
-    border-radius: 1em;
     margin: 0 auto;
     position: relative;
+
+}
+ul.train{
+    width: 300%;
+    transition: 1s;
+}
+ul li img{
+    border-radius: 1em;
 
 }
 .carousel-item > img{

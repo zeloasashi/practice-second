@@ -4,6 +4,9 @@ body{
 .container{
     width: 100%;
 }
+ul li{
+    list-style: none;
+}
 /* -------------header------------- */
 header{
     margin-bottom: 1rem;
@@ -306,7 +309,25 @@ section.second .title{
     font-size: 0.8rem;
 }
 
+/* -------------FAQ------------- */
 
+.faq-title {
+    justify-content: space-between;
+}
+.faq-list{
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #EFEFEF;
+}
+#FAQ ul{
+    padding: 0;
+}
+.faq-content{
+    background-color: #fff;
+}
+.faq-content p{
+    margin: 0;
+}
 /* -------------footer------------- */
 
 .irodo-icon{

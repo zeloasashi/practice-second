@@ -89,10 +89,10 @@ main{
     position: relative;
 
 }
-ul.train{
-    /* width: 300%; */
-    /* transition: 1s; */
-}
+/* ul.train{
+    width: 300%;
+    transition: 1s;
+} */
 ul.train li.main-img{
     width: 100%;
     float: left;

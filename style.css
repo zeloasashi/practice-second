@@ -84,19 +84,78 @@ main{
 }
 .main-visual{
     margin-bottom: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
     position: relative;
 
 }
 ul.train{
-    width: 300%;
-    transition: 1s;
+    /* width: 300%; */
+    /* transition: 1s; */
 }
-ul li img{
-    border-radius: 1em;
+ul.train li.main-img{
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    /* opacity: 0; */
+    display: block;
+    /* z-index: 1; */
+    -webkit-animation: round 35s linear infinite;
+    animation: round 35s linear infinite;
+}
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+ul.train li:nth-child(3) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
 
+ul.train li:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
+
+ul.train li:nth-child(1) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+ul.train li img{
+    border-radius: 1em;
+}
+
 .carousel-item > img{
     border-radius: 1em;
 }
@@ -127,7 +186,7 @@ ul li img{
 @media screen and (min-width:720px){
     .word-decoration{
         left: 10%;
-        top: 45%;
+        top: 35%;
     }
     .word-decoration p{
         font-size: larger;
@@ -136,11 +195,21 @@ ul li img{
 @media screen and (min-width:960px){
     .word-decoration{
         left: 15%;
-        top: 67%;
+        top: 37%;
     
     }
     .word-decoration p{
         font-size: larger;
+    }
+}
+@media screen and (min-width:1140px){
+    .word-decoration{
+        left: 15%;
+        top: 47%;
+    
+    }
+    .word-decoration p{
+        font-size: x-large;
     }
 }
 

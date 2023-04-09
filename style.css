@@ -393,14 +393,21 @@ section.second .title{
 }
 
 /* -------------FAQ------------- */
-
-.faq-title {
-    justify-content: space-between;
-}
 .faq-list{
     padding: 20px;
     border-radius: 1em;
     background-color: #EFEFEF;
+}
+.faq-title {
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq-title p{
+    margin: 0;
+
+}
+.faq-content{
+    transition: .5s;
 }
 #FAQ ul{
     padding: 0;

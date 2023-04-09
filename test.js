@@ -1,5 +1,10 @@
 
-    // $(".main-img1").fadeOut( 1000, "linear", complete );
+$('.faq-title').click(function(){
+    console.log('title:', title);
+    $('.faq-content').toggleClass('.d-none');
+})
+
+// $(".main-img1").fadeOut( 1000, "linear", complete );
 
     // $("main#first").animate(function (){
     //     $(".main-img1").fadeOut( 1000, "linear", complete );
